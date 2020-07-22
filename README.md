@@ -1,3 +1,40 @@
+# Installation:
+
+#### [Windows]
+* use GitBash or enable WSL2: https://github.com/mmarkus13/automation/blob/master/wsl_open_image_from_temrinal/wsl_enable.ps1
+* install Ubuntu 20.04 LTS & Windows Terminal from Microsoft Store
+
+#### [Linux/WSL2/Bash Terminal]
+* Make sure you have vim editor installed and updated:
+```
+$ sudo apt-get update
+$ sudo apt-get install vim
+```
+
+
+#### Create folder & copy repository:
+```
+mkdir -p ~/.vim/bundle/
+cd ~/.vim/bundle/
+git clone https://github.com/gmarik/Vundle.vim
+```
+###### ...or just directly clone it to the final destination
+```
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+#### Backup your .vimrc and copy new contents from https://raw.githubusercontent.com/mmarkus13/dot-files/master/vimrc
+```
+mv .vimrc .vimrcBAK<date>
+vi .vimrc #paste raw from Git & update to your prefrences --un/comment plugins
+```
+
+#### Install the selected (specified in .vimrc) plugins:
+```
+$ vim +PluginInstall +qall
+```
+
+# Plugins:
 # dot-files
 Dotfiles repository
 
