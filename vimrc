@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""
-" Allan MacGregor Vimrc configuration 
+" Michal Márkus Vimrc configuration 
 """""""""""""""""""""""""""""""""""""
 set encoding=utf8
 
@@ -157,7 +157,7 @@ let g:vim_typing_sound_command = 'afplay' " or 'afplay'
 let g:vim_typing_sound_path = '/Volumes/Workspace/Utilities/Sound/9744__horn__typewriter.wav'            " set your sound path
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme challenger_deep
+"colorscheme challenger_deep
 let g:challenger_deep_termcolors = 256
 
 let g:spacegray_underline_search = 1
